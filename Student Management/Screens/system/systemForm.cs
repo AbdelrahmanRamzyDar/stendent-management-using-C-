@@ -8,15 +8,18 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace Student_Management.Screens.Templates
+namespace Student_Management.Screens.system
 {
-    public partial class TemplateForm : Form
+    public partial class systemForm : Form
     {
-        public TemplateForm()
+        public systemForm()
         {
             InitializeComponent();
         }
 
-        public bool isupdate { get; set; }
+        private void systemForm_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

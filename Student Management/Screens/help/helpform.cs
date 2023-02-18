@@ -8,15 +8,23 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace Student_Management.Screens.Templates
+namespace Student_Management.Screens.help
 {
-    public partial class TemplateForm : Form
+    public partial class helpform : Form
     {
-        public TemplateForm()
+        public helpform()
         {
             InitializeComponent();
         }
 
-        public bool isupdate { get; set; }
+        private void flowLayoutPanel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void help_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

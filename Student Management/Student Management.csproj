@@ -34,6 +34,7 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
+    <Reference Include="System.configuration" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
@@ -46,14 +47,68 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Models\Department\Department.cs" />
+    <Compile Include="Models\employee\Employee.cs" />
+    <Compile Include="Models\Users\LoggedInUser.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Screens\Departmaent\DepartForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Screens\Departmaent\DepartForm.Designer.cs">
+      <DependentUpon>DepartForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Screens\DashboardForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Screens\DashboardForm.Designer.cs">
+      <DependentUpon>DashboardForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Screens\Departmaent\DepartInfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Screens\Departmaent\DepartInfo.Designer.cs">
+      <DependentUpon>DepartInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Screens\employee\employeeinfoForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Screens\employee\employeeinfoForm.Designer.cs">
+      <DependentUpon>employeeinfoForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Screens\employee\manageemployeeForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Screens\employee\manageemployeeForm.Designer.cs">
+      <DependentUpon>manageemployeeForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Screens\help\helpform.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Screens\help\helpform.Designer.cs">
+      <DependentUpon>helpform.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Screens\LoginForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Screens\LoginForm.Designer.cs">
+      <DependentUpon>LoginForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Screens\system\systemForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Screens\system\systemForm.Designer.cs">
+      <DependentUpon>systemForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="Screens\Templates\TemplateForm.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Screens\Templates\TemplateForm.Designer.cs">
       <DependentUpon>TemplateForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="Utilites\AppSetting.cs" />
+    <Compile Include="Utilites\Imageman.cs" />
+    <Compile Include="Utilites\Lists\ListData.cs" />
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -62,7 +117,32 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="Screens\DashboardForm.resx">
+      <DependentUpon>DashboardForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Screens\Departmaent\DepartForm.resx">
+      <DependentUpon>DepartForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Screens\Departmaent\DepartInfo.resx">
+      <DependentUpon>DepartInfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Screens\employee\employeeinfoForm.resx">
+      <DependentUpon>employeeinfoForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Screens\employee\manageemployeeForm.resx">
+      <DependentUpon>manageemployeeForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Screens\help\helpform.resx">
+      <DependentUpon>helpform.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Screens\LoginForm.resx">
+      <DependentUpon>LoginForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Screens\system\systemForm.resx">
+      <DependentUpon>systemForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Screens\Templates\TemplateForm.resx">
       <DependentUpon>TemplateForm.cs</DependentUpon>
     </EmbeddedResource>
@@ -78,6 +158,49 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\art-background-close-up-1939485.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\images.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\kaddressbook.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\system.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\JIIDBFramewor\JIIDBFramewor.csproj">
+      <Project>{71A8DA08-7395-49FB-94B8-B9D78DAB8D77}</Project>
+      <Name>JIIDBFramewor</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\2216719.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\2216668.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\2216660.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\2216707.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\system_users.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\2216714.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\2216657.png" />
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <None Include="Resources\1237155.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

@@ -117,47 +117,51 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="2216668" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\2216668.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <metadata name="menuStrip1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 17</value>
+  </metadata>
+  <metadata name="toolStrip1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>132, 17</value>
+  </metadata>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="NewStudenttoolStripButton1.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        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
+        AElFTkSuQmCC
+</value>
   </data>
-  <data name="2216707" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\2216707.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="2216714" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\2216714.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="2216657" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\2216657.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="22167191" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\2216719.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="2216719" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\2216719.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="art-background-close-up-1939485" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\art-background-close-up-1939485.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="system" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\system.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="22166601" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\2216660.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="system_users" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\system_users.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="kaddressbook" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\kaddressbook.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="2216660" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\2216660.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="images" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\images.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="1237155" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\1237155.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
+  <metadata name="$this.TrayHeight" type="System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>25</value>
+  </metadata>
 </root>
